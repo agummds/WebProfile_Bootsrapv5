@@ -1,11 +1,15 @@
 body{
     font-family: 'Poppins', sans-serif;
-    background:#032030;
+    background-color: white;
 }
 
 .navbar-brand{
     font-weight: 700;
     font-size: 20px;
+}
+
+.navbar-brand span{
+    color: #00ACB3;
 }
 
 .nav-link{
@@ -16,59 +20,98 @@ body{
     font-weight: 700;
 }
 
+.button-primary{
+    width:190px;
+    height: 53px;
+    padding: 12px 52px 12px 52px;
+    gap: 10px;
+    border-radius: 12px;
+    border: 2px solid black;
+    border-color: black;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: center;
+    color: black;
+    transition: all ease-in .2s;
+}
+/* Kondisi ketika hover */
+.button-primary:hover{
+    width:190px;
+    height: 53px;
+    padding: 12px 52px 12px 52px;
+    gap: 10px;
+    border-radius: 12px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: center;
+    color: white;
+    transition: all ease-in .2s;
+}
+
 
 /* hero section */
 #hero{
     height:100vh;
     width: 100%;
+    background: linear-gradient(140deg, #A1DCDE ,#00ACB3);
 }
 
-.img-hero{
-    height: 100vh;
+.img-home{
+    height: 400px;
 }
 
 .hero-tagline h1{
-    color: antiquewhite;
+    color: black;
     font-weight: 700;
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 45px;
+    line-height: 60px;
 }
 
 .hero-tagline h1 span{
-    color: #8AAEE0
+    color: #00ACB3;
+    background-color: white;
 }
 
-.hero-tagline h3{
-    color: antiquewhite;
+.button-secondary{
+    width: 240px;
+    height: 60px;
+    padding: 12px 52px 12px 52px;
+    gap: 10px;
+    border-radius: 50px;
+    background-color: #00ACB3;
+    border: none;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: center;
+
+    transition: all ease-in .2s;
+}
+/* kondisi ketika hover */
+.button-secondary:hover{
+    width: 240px;
+    height: 60px;
+    padding: 12px 52px 12px 52px;
+    gap: 10px;
+    border-radius: 50px;
+    background-color:transparent;
+    border: 2px solid white;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: center;
+    color: white;
+
+    transition: all ease-in .2s;
 }
 
-.hero-tagline p{
-    color: antiquewhite;
-    font-size: 30px;
-    width: 85%;
-}
-
-.button-lg-primary{
-    width: 237px;
-    height: 70px;
-    background-color: antiquewhite;
-    color: #032030;
-    border: 0;
-    font-size: 20px;
-    font-weight: 700;
-    transition: all .2s ease-in;
-}
-
-.button-lg-primary:hover{
-    width: 237px;
-    height: 70px;
-    background-color: #8AAEE0;
-
-    border: 0;
-    font-size: 20px;
-    font-weight: 700;
-    transition: all .2s ease-in;
-}
 
 /* Awal Bagian About */
 #about{
@@ -78,44 +121,32 @@ body{
 
 h5{
     font-size:  20px;
-    color: antiquewhite;
+    color: red;
 }
 
-h2{
+.tentang h2{
     font-size: 50px;
-    font-weight: 500;
-    color: antiquewhite;
-}
-
-.tentang p{
-    padding: 50px;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    font-size: 20px;
+    font-weight: 700;
+    color: #00ACB3;
 }
 
 .img-tentang{
-    height: 100%;
-    width: 100;
+    height: 400px;
     border-radius: 50%;
-}
-
-.hero-tentang h3{
-    font-size:  20px;
-    color: antiquewhite;
+    color: black;
 }
 
 .hero-tentang p{
     font-size: 20px;
     font-weight: 500;
-    color: antiquewhite;
+    color: black;
 }
 /* Akhir  Bagian About */
 
 /* Awal Bagian Resume */
-#resume{
+#myskills{
     padding: 100px, 0;
+    background-color: #00ACB3;
 
 }
 
@@ -125,9 +156,9 @@ h2{
     color: antiquewhite;
 }
 
-.card-resume{
-    width: 100%;
-    height: 313px;
+.card-skills{
+    width: 100px;
+    height: 50px;
     border-radius: 5px;
     background-color: #022B42;
     padding: 10px;
@@ -151,30 +182,3 @@ h2{
     transition: all .1s ease-in;
 }
 
-/* Kondisi ketika Hover */
-.card-resume:hover{
-    width: 100%;
-    height: 313px;
-    border-radius: 5px;
-    background-color: #004D74;
-    padding: 4px;
-    
-    transition: all .1s ease-in;
-}
-
-
-.card-resume h3:hover{
-    color: #d5deef;
-    font-size: 40px;
-
-    transition: all .2s ease-in;
-
-}
-
-.card-resume p:hover{
-    color: #d5deef;
-    font-size: 20px;
-
-    transition: all .2s ease-in;
-
-}
